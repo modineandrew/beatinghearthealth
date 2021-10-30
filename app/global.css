@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+.text {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.themeDiv {
+    position: relative;
+    z-index: 100;
+}
+
+.topbanner {
+    color: #000000;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0px;
+    top: 0px !important;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-buttons {
+    position: absolute;
+    right: 3%;
+    top: 55px;
+}
+
+a {
+    font-size: 30px;
+    padding: 0px 5px;
+}
+
+body {
+    background-color: #eee !important;
+}
+
+a {
+    color: #000000;
+    
+}
+a:hover {
+    animation-duration: 0.5s;
+    animation-name: fadeGreen;
+    color:#11a511;
+}
+
+@keyframes fadeGreen {
+    from {
+        color:#000000;
+    }
+
+    to {
+        color:#11a511;
+    }
+}
+
+@keyframes blur-noblur {
+    from {
+        filter: brightness(1);
+        outline-style: solid;
+        outline-width: 4px;
+        outline-color: #111;
+    }
+    to {
+        filter: brightness(1.1);
+        outline-style: solid;
+        outline-width: 4px;
+        outline-color: #11a511;
+    }
+}
+
+.pageText {
+    position: relative;
+    top: 125px;
+    text-align: center !important;
+    font-size: 20px !important;
+}
+
+iframe[seamless]{
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.headerImg {
+    text-align: center !important;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.labelImg {
+    filter:drop-shadow(0px 0px 0px #272727);
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: #111;
+}
+.labelImg:hover {
+    animation-duration: 0.5s;
+    animation-name: blur-noblur;
+    
+    filter:drop-shadow(0px 0px 2px #272727);
+    filter: brightness(1.1);
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: #11a511;
+}
+.notext {
+    font-size: 0px !important;
+}
+
+th, td {
+    padding: 0px;
+    width: 25%;
+    /* display: flexbox; */
+    padding: 0; margin: 0;
+}
+img {
+    font-size: 0px; line-height: 0px;
+    padding: 0px; 
+}
+table {
+    font-size: 0px; line-height: 0px;
+    padding: 0px;
+}

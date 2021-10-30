@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sleep Calculator</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../global.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container sleepcalculator">
+
+  <div class="row">
+    <div class="col-md-5">
+
+      <div class="wake-up">
+
+        <h4>Wake Up Time</h4>
+
+        <p class="small">Select the time you want to wake up.</p>
+        
+        <input data-customClass="form-control" type="text" id="sleepcalc" data-format="h:mm a" data-template="hh : mm a" name="datetime" value="6:30 am">
+        
+        
+        
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+      <h4>You Should Go To Bed At:</h4>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 id="result1" class="resulttime animated"></h3>
+          <p>This gives you 9 hours of sleep and 6 sleep cycles.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3 id="result2" class="resulttime"></h3>
+          <p>This gives you 7.5 hours of sleep and 5 sleep cycles.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3 id="result3" class="resulttime"></h3>
+          <p>This gives you 6 hours of sleep and 4 sleep cycles.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://vitalets.github.io/combodate/momentjs/moment.min.2.5.0.js'></script>
+<script src='https://vitalets.github.io/combodate/combodate.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
