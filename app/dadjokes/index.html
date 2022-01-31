@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Beating Heart Health - Compliment Generator</title>
+        <title>Dad Jokes</title>
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,16 +11,12 @@
         </div>
         <div style="width:20px;height:140px;"></div>
         <p class="text pageText" id="complimentBox"></p>
-        <div style="position:absolute;top:60%; left:50%;;margin: 0;">
-            <button onclick='complimentBox = document.getElementById("complimentBox");fetch("compliments").then(response => response.text()).then((data) => {;complimentBox.innerHTML = data.split("\n")[Math.floor(Math.random() * 32)]})'>Refresh</button>
-        </div>
         
         <div style="width:20px;height:100px;"></div>
-        <h3 class="text pageText">People can be mean sometimes, but compliments make them feel better! So go give people compliments!</h3>
         <script>
 complimentBox = document.getElementById("complimentBox")
-fetch("compliments").then(response => response.text()).then((data) => {
-    complimentBox.innerHTML = data.split("\n")[Math.floor(Math.random() * 32)]
+fetch("jokes").then(response => response.text()).then((data) => {
+    complimentBox.innerHTML = data.split("\n")[Math.floor(Math.random() * data.split("\n").length)]
 })
         </script>
     </body>

@@ -24,6 +24,10 @@
     right: 3%;
     top: 55px;
 }
+.small-text {
+    font-size: medium !important;
+    padding: 0px 0px !important;
+}
 
 a {
     font-size: 30px;
