@@ -1,6 +1,8 @@
 var bedtime;
 var wakeuptime;
 
+var totalSleep;
+
 const modeselect = document.getElementById("modeselect")
 const sleepcalc_main = document.getElementById("sleepcalc_main")
 modeselect.onchange = () => {
@@ -25,15 +27,26 @@ function lastnight_calc_update() {
     console.log(bedtime.value)
     console.log(wakeuptime.value)
 
-    var bedtimehours = bedtime.value.split(":")[0]
-    var wakeuphours = wakeuptime.value.split(":")[0]
-    var rudimentaryHours = bedtimehours - wakeuphours
-    console.log(24 - rudimentaryHours)
-    if ((24 - rudimentaryHours) < 11) {
-        document.getElementById("sleeptime").innerHTML = "You got " + (24 - rudimentaryHours).toString() + " hours of sleep! <br>That may not be enough for you."
+    var bedtimehours = bedtime.value.split(":")[0] // Imagine this is 1
+    var wakeuphours = wakeuptime.value.split(":")[0] // Imagine this is 6
+    if (bedtimehours < 13) {
+        totalSleep = wakeuphours - bedtimehours
+        console.log("USED METHOD 1")
     }
     else {
-        document.getElementById("sleeptime").innerHTML = "You got " + (24 - rudimentaryHours).toString() + " hours of sleep!"
+        var rudimentaryHours = bedtimehours - wakeuphours // Then this is 1 - 6, which is -5
+        totalSleep = 24 - rudimentaryHours // And this is 24 - (-5), which is 31.
+        console.log("USED METHOD 2")
+    }
+    
+    
+    console.log(totalSleep)
+
+    if ((24 - rudimentaryHours) < 11) {
+        document.getElementById("sleeptime").innerHTML = "You got " + totalSleep.toString() + " hours of sleep! <br>That may not be enough for you."
+    }
+    else {
+        document.getElementById("sleeptime").innerHTML = "You got " + totalSleep.toString() + " hours of sleep!"
     }
     
 }

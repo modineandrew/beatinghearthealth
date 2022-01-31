@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Beating Heart Health - Health Checklist</title>
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <div class="topbanner text navbar-buttons">
+            <a href="/app" class="text navbar-buttons autofit" style="left: 15px !important;top: 5px !important;font-size: 30px !important"><img src="../../icon/logo-concept-600-300.png" alt="Beating Heart Health" style="width:200px !important"></a>
+            </div>
+        </div>
+        <div style="width:20px;height: 100px;"></div>
+        <div class="text">Weekly Health Checklist</div>
+        <br><br>
+        <div id="checklist_items"></div>
+        <br><button onclick="add_item()">+</button><button onclick="save_item()">Save</button>
+        <br>
+        <div class="text">To add an item, click +. To save, click save.<br>To remove an item, empty its contents, save, and reload!</div>
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="checklist.js"></script>
+    
+</html>
