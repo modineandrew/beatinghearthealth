@@ -130,7 +130,7 @@ img {
 }
 
 .autofit {
-    width: fit-content;
+    width: fit-content !important;
 }
 
 table {
