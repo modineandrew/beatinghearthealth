@@ -4,6 +4,7 @@
     ["Celebrations", "songs/andrewm/Celebrations.mp3", "andrewm"],
     ["Summer", "songs/andrewm/Summer.mp3", "andrewm"],
     ["Through The Years", "songs/andrewm/Through The Years.mp3", "andrewm"],
+    ["Side Chain", "songs/andrewm/Side Chain.mp3", "andrewm"],
     ["Isaías 41:10", "songs/BOUE/BOUE - Isaias 41_10.mp3", "BOUE"],
     ["Better Days", "songs/LAKEY INSPIRED/LAKEY INSPIRED - Better Days.mp3", "LAKEY INSPIRED"],
     ["By The Pool", "songs/LAKEY INSPIRED/LAKEY INSPIRED - By The Pool.mp3", "LAKEY INSPIRED"],
